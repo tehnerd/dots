@@ -1,0 +1,28 @@
+step 1 
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
+Next you need to add this to your ~/.vimrc:
+    execute pathogen#infect()
+Step 2: Install syntastic as a pathogen bundle
+You now have pathogen installed and can put syntastic into ~/.vim/bundle like this:
+
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/syntastic.git
+
+Quit vim and start it back up to reload it, then type:
+
+:Helptags
+
+
+go:
+cd ~/.vim/bundle
+git clone https://github.com/fatih/vim-go.git
+
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+
+https://github.com/majutsushi/tagbar
+https://github.com/Valloric/YouCompleteMe
