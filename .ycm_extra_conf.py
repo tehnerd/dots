@@ -80,6 +80,9 @@ flags = [
 './tests/gmock',
 '-isystem',
 './tests/gmock/include',
+# echo "" | g++ -xc - -v -E
+'-I',
+'/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/',
 ]
 
 

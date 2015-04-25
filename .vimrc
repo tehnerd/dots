@@ -22,6 +22,9 @@ let g:UltiSnipsJumpForwardTrigger="<c-\\>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
+" for tab completion
+set wildmode=longest,list,full
+set wildmenu
 
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
