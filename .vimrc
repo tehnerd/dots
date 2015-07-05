@@ -32,6 +32,8 @@ let g:go_fmt_command = "goimports"
 
 set tabstop=4
 set shiftwidth=4
+" backspace for mac to work
+set backspace=2 
 set expandtab
 filetype on
 filetype plugin on
