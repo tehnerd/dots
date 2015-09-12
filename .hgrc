@@ -26,6 +26,12 @@ diff.file_b = green bold
 diff.hunk =  blue bold
 diff.deleted = red bold
 diff.inserted = cyan bold
+custom.rev = yellow
+custom.phase = bold
+custom.user = bold blue
+custom.age = bold
+custom.tag = bold red
+
 
 [pager]
 # less -F: quit if one screen
@@ -33,4 +39,9 @@ diff.inserted = cyan bold
 # less -R: raw (keep colors)
 # less -X: no init (don't see termcap init sequences)
 pager = LESS='FSRX' less
+
+
+[alias]
+ftree = log -G
+tree = log  -G --template "{label('custom.rev', rev)}\t{label('custom.phase',phase)}\t{label('custom.tag',tags)}\t{desc|firstline} {label('custom.age', date|age)} {label('custom.user', author|user)}\n"
 
