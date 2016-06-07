@@ -1,7 +1,7 @@
 execute pathogen#infect()
 syntax enable
-let mapleader=" "
-map <Leader>n :NERDTreeToggle<CR>
+let mapleader="\\"
+map <Leader>w :NERDTreeToggle<CR>
 map <Leader>q :TagbarToggle<CR>
 
 
@@ -25,6 +25,9 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.p
 " for tab completion
 set wildmode=longest,list,full
 set wildmenu
+
+"timeouts:
+set timeoutlen=300
 
 au FileType go nmap <Leader>w <Plug>(go-info)
 au FileType go nmap <Leader>e  <Plug>(go-doc)

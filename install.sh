@@ -18,4 +18,4 @@ git clone https://github.com/Valloric/YouCompleteMe
 cd YouCompleteMe
 git submodule update --init --recursive
 sudo apt-get install cmake ctags python-dev g++
-./install.py --clang-completer --gocode-completer
+./install.py --clang-completer
