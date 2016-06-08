@@ -3,6 +3,8 @@ syntax enable
 let mapleader="\\"
 map <Leader>w :NERDTreeToggle<CR>
 map <Leader>q :TagbarToggle<CR>
+map <Leader>e :NERDTreeFocus<CR>
+map <Leader>r :set invpaste<CR>
 
 
 function! StartUp()                                                                                                                                                                                         
