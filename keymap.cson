@@ -1,0 +1,9 @@
+'body':
+  'ctrl-w left': 'window:focus-pane-on-left'
+  'ctrl-w right': 'window:focus-pane-on-right'
+  'ctrl-w up': 'window:focus-pane-above'
+  'ctrl-w down': 'window:focus-pane-below'
+
+'.platform-darwin atom-workspace':
+  'ctrl-w S': 'pane:split-left-and-move-active-item'
+  'ctrl-w I': 'pane:split-down-and-move-active-item'
