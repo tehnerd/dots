@@ -9,5 +9,6 @@ git clone --depth 1 https://github.com/scrooloose/syntastic.git
 git clone --depth 1 https://github.com/scrooloose/nerdtree.git
 git clone --depth 1 https://github.com/majutsushi/tagbar
 git clone --depth 1 https://github.com/vim-scripts/a.vim
+git clone --depth 1 https://github.com/vivien/vim-linux-coding-style
 
 
