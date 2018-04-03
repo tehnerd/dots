@@ -24,6 +24,12 @@ let g:UltiSnipsJumpForwardTrigger="<c-\\>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 " for tab completion
 set wildmode=longest,list,full
 set wildmenu
