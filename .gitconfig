@@ -26,7 +26,7 @@
     br = branch
     up = remote update
     st = status
-    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit -n 100
 
 [credential]
     helper = cache --timeout=3600
