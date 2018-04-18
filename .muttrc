@@ -1,0 +1,20 @@
+set realname = "Nikita V. Shirokov"
+set from = "tehnerd@tehnerd.com"
+set use_from = yes
+set envelope_from = yes
+
+set smtp_url = "smtps://tehnerd@tehnerd.com@smtp.gmail.com:465/"
+set smtp_pass = "<pw>"
+set imap_user = "tehnerd@tehnerd.com"
+set imap_pass = "<pw>"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set ssl_force_tls = yes
+
+# G to get mail
+bind index G imap-fetch-mail
+set editor = "vim"
+set charset = "utf-8"
+set record = ''
+set sort_aux = "reverse-date"
+set header_cache = "/home/tehnerd/mutt/"
