@@ -11,4 +11,5 @@ git clone --depth 1 https://github.com/majutsushi/tagbar
 git clone --depth 1 https://github.com/vim-scripts/a.vim
 git clone --depth 1 https://github.com/vivien/vim-linux-coding-style
 
-
+# go related packages
+# git clone https://github.com/fatih/vim-go --depth 1 --branch v1.19
