@@ -6,10 +6,8 @@ map <Leader>q :TagbarToggle<CR>
 map <Leader>e :NERDTreeFocus<CR>
 map <Leader>r :set invpaste<CR>
 
-
 function! StartUp()                                                                                                                                                                                         
     if 0 == argc()
-        NERDTree
     end
 endfunction
 
@@ -40,6 +38,9 @@ set timeoutlen=300
 au FileType go nmap <Leader>w <Plug>(go-info)
 au FileType go nmap <Leader>e  <Plug>(go-doc)
 let g:go_fmt_command = "goimports"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+let g:go_auto_type_info = 1 
 
 set tabstop=4
 set shiftwidth=4
@@ -56,4 +57,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#CompleteCpp sw=2 sts=2 et
+autocmd FileType cc set omnifunc=ccomplete#CompleteCpp sw=2 sts=2 et
 autocmd FileType cpp set omnifunc=ccomplete#CompleteCpp sw=2 sts=2 et
+autocmd FileType hpp set omnifunc=ccomplete#CompleteCpp sw=2 sts=2 et
+" au filetype go inoremap <buffer> . .<C-x><C-o>
+let g:UltiSnipsExpandTrigger="<tab>"
