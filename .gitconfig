@@ -1,6 +1,6 @@
 [user]
     email = tehnerd@tehnerd.com
-    name = tehnerd
+    name = Nikita V. Shirokov
 [color]
     diff = auto
     status = auto
@@ -34,4 +34,5 @@
     decorate = full
 [color "decorate"]
     tag = red
-
+[core]
+    editor = vim
